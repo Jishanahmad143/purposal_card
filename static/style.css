@@ -10,42 +10,55 @@ body {
 
 .card {
     padding: 25px;
-    background: rgba(225,225,225,0.2);
+    background: rgba(225,225,225,0.8);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
     color: white;
     text-align: center;
-    width: 300px;
+    width: 320px;
     position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card h2 {
-    color: #d6336c;
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 15px;
 }
 
 .card p {
+    font-family: 'Poppins', sans-serif;
     margin: 20px 0;
-    font-size: 16px;
+    font-size: 18px;
     color: #333;
+    line-height: 1.5;
 }
  
 
 button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     margin: 10px;
     cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 .yes {
-    background-color: red;
+    background: linear-gradient(135deg, #ff4b7d, #ff758c;
     color: white;
+    box-shadow: 0 4px 10px rgba(255, 75, 125,0.5);
 }
 
 .no {
-    background-color: gray;
+    background: linear-gradient(135deg, #6c757d, #999);
     color: white;
     position: absolute;
 }
 
+button:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
  
