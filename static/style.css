@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background:linear-gradient(135deg, #ff4b7d,#ff758c);
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
