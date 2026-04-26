@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Purposal Card</title>
+</head>
+<body>
+    <div class="card">
+        <h1>Will You Be My Girlfriend?</h1>
+        <p>I hope this message finds you well. I wanted to take a moment to express my gratitude for your continued support.</p>
+        <div class="buttons">
+            <button class="yes">Yes</button>
+            <button class="no" id="noBtn">No</button>
+        </div>
+    </div>
+    <script>
+        const yesBtn = document.querySelector(".yes");
+        yesBtn.addEventListener("click", () => {
+            window.location.href = "/Yes";
+        });
+        const noBtn = document.getElementById("noBtn");
+
+        noBtn.addEventListener("mouseover", () => {
+            // Random position generate karo
+            const x = Math.floor(Math.random() * 300) - 100; 
+            const y = Math.floor(Math.random() * 300) - 100;
+
+            noBtn.style.transform = `translate(${x}px, ${y}px)`;
+        });
+    </script>
+</body>
+</html>
